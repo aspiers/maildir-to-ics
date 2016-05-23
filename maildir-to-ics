@@ -75,7 +75,7 @@ VEVENTS_TZIDS = {}
 def verbose_print(s, level=1):
     global VERBOSE
     if VERBOSE >= level:
-        print s
+        print >>sys.stderr, s
 
 
 class LineUnwrapper:
